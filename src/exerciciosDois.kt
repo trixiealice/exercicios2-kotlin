@@ -28,6 +28,11 @@ fun main () {
     println("---------- Exercício 15 ----------")
 
     var idades = arrayOf(3,4,6,7,8,9,19,23,24)
+    when (idades) {
+        in 18..100 -> ("Maior de Idade")
+    }
+
+
 
 
 
