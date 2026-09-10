@@ -1,4 +1,5 @@
 import modulo.Pessoa
+import modulo.Produto
 
 fun main () {
     println("                                  ")
@@ -73,7 +74,34 @@ fun main () {
     var pessoa = Pessoa("Alice", 67, "São Paulo")
     pessoa.retornarDados()
 
+
+    println("\n" +
+            "---------- Exercício 18 ----------")
+    val primeiroNumero = 1
+
+    val numeProdut = listOf(primeiroNumero, 1,2,3)
+
+    val produtos: List<Produto> = listOf(
+        Produto("a", 21.2),
+        Produto("b", 24.2),
+        Produto("c", 30.2),
+    )
+
+    val produtoMaisCaro = produtos.maxBy { produto -> produto. preco}
+    println("${produtoMaisCaro.nome} custa ${produtoMaisCaro.preco}")
+
+
+    println("\n" +
+            "---------- Exercício 19 ----------")
+    
+
+    println("\n" +
+            "---------- Exercício 20 ----------")
+
+
 }
+
+
 
 
 
